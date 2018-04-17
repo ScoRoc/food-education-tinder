@@ -7,43 +7,78 @@
   </head>
   <body>
 
+    <div class='win-screen'>
+      <h1>You've fed MOLO!</h1>
+      <img src='imgs/monster-closed.png' />
+    </div>
+    <img class='monster-food' />
+    <img class='trash-food' />
+
+
     <div id='grid-main'>
       <div class='top-row'>
-        <p>Timer: <span class='seconds'>60</span> seconds</p>
-        <p>Points needed: 30</p>
+        <p>Timer: <span class='seconds'>25</span> seconds</p>
+        <h1>Feeding MOLO!</h1>
+        <button id='start'>Start feeding MOLO</button>
       </div>
       <div class='mid-top-row'>
-        <p>Vegetables: 10</p>
-        <p>Protein: 10</p>
-        <p>Grain: 10</p>
+        <p>Fat: <span id='fat'>10</span></p>
+        <p>Sugar: <span id='sugar'>10</span></p>
+        <p>Fiber: <span id='fiber'>10</span></p>
       </div>
       <div class='monster'>
-        <img src='imgs/cookie.png' />
+        <img src='imgs/monster-closed.png' />
       </div>
       <div class='conveyor'>
-        <div class='cookie' >
-          <button class='food-button cookie-good'>Good Food</button>
-          <img src='imgs/cookie.png' />
-          <button class='food-button cookie-bad'>Bad Food</button>
+        <div class='friedchicken' >
+          <button class='food-button friedchicken-good'>Feed MOLO</button>
+          <img src='imgs/friedchicken.jpg' />
+          <button class='food-button friedchicken-bad'>Throw away</button>
+        </div>
+        <div class='orange' >
+          <button class='food-button orange-good'>Feed MOLO</button>
+          <img src='imgs/orange.png' />
+          <button class='food-button orange-bad'>Throw away</button>
+        </div>
+        <div class='salad' >
+          <button class='food-button salad-good'>Feed MOLO</button>
+          <img src='imgs/salad.jpeg' />
+          <button class='food-button salad-bad'>Throw away</button>
+        </div>
+        <div class='melon' >
+          <button class='food-button melon-good'>Feed MOLO</button>
+          <img src='imgs/melon.png' />
+          <button class='food-button melon-bad'>Throw away</button>
+        </div>
+        <div class='pizza' >
+          <button class='food-button pizza-good'>Feed MOLO</button>
+          <img src='imgs/pizza.png' />
+          <button class='food-button pizza-bad'>Throw away</button>
+        </div>
+        <div class='kiwi' >
+          <button class='food-button kiwi-good'>Feed MOLO</button>
+          <img src='imgs/kiwi.png' />
+          <button class='food-button kiwi-bad'>Throw away</button>
+        </div>
+        <div class='bread' >
+          <button class='food-button bread-good'>Feed MOLO</button>
+          <img src='imgs/bread.png' />
+          <button class='food-button bread-bad'>Throw away</button>
+        </div>
+        <div class='burger' >
+          <button class='food-button burger-good'>Feed MOLO</button>
+          <img src='imgs/burger.png' />
+          <button class='food-button burger-bad'>Throw away</button>
         </div>
         <div class='strawberry'>
-          <button class='food-button straw-good'>Good Food</button>
-          <img src='imgs/strawberries.png' />
-          <button class='food-button straw-bad'>Bad Food</button>
+          <button class='food-button strawberry-good'>Feed MOLO</button>
+          <img src='imgs/strawberry.png' />
+          <button class='food-button strawberry-bad'>Throw away</button>
         </div>
       </div>
-      <!-- <div class='bad-food'>
-        <button class='food-button bad-btn bad-good-btn'>bad button</button>
-      </div> -->
-      <!-- <div class='next'>
-        <button class='food-button next-btn'>Next</button>
-      </div> -->
-      <!-- <div class='good-food'>
-        <button class='food-button good-btn bad-good-btn'>good button</button>
-      </div> -->
-      <!-- <footer>
-        <p>footer placeholder</p>
-      </footer> -->
+      <div class='trash'>
+        <img class='trashcan' src='imgs/trash.png' />
+      </div>
     </div>
 
     <script
