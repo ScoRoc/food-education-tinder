@@ -1,0 +1,131 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  padding: 0 1em;
+  display: flex;
+  /* flex-flow: row-reverse; */
+  align-items: center;
+  justify-content: space-between;
+  grid-area: nav;
+  background: blue;
+}
+
+img {
+  position: relative;
+  /* max-height: 20em; */
+  transition: transform .9s;
+}
+
+/* footer {
+  display: flex;
+  grid-area: footer;
+  justify-content: center;
+  background: maroon;
+} */
+
+/* footer p {
+  align-self: center;
+} */
+
+.top-row {
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-area: toprow;
+  background: blue;
+}
+
+.mid-top-row {
+  padding: 0 1em;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  grid-area: midtop;
+  background: purple;
+}
+
+.monster {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 2 / 2 / 4 / 5;
+  background: aqua;
+}
+
+.monster img {
+  max-width: 18em;
+}
+
+.conveyor {
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: conveyor;
+  background: darkgrey;
+}
+
+.pic-wrap {
+  display: flex;
+
+}
+
+.conveyor img {
+  max-width: 14em;
+}
+
+.conveyor div {
+  margin-left: 20em;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  transform: translateX(-150vw);
+}
+
+.strawberry {
+  animation: food-slide 8s linear infinite;
+}
+
+.cookie {
+  transition: transform 1s;
+  animation: food-slide 8s linear infinite;
+}
+
+@keyframes food-slide {
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.food-button {
+  padding: .6em .8em;
+  outline: none;
+  border-radius: .7em;
+  /* transition: transform .9s; */
+}
+
+#grid-main {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 2fr 2fr 8fr 1fr 5fr 2fr 4fr;
+  grid-template-areas:
+    'toprow toprow toprow toprow toprow'
+    '. . . . midtop'
+    '. . . . .'
+    '. . . . .'
+    'conveyor conveyor conveyor conveyor conveyor'
+    '. . . . .'
+    '. . . . .';
+  background: green;
+  overflow: hidden;
+}
