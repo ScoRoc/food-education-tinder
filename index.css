@@ -63,7 +63,7 @@ img {
   /* grid-area: 4 / 1 / 5 / 5; */
   grid-area: conveyor;
   /* background-image: url('imgs/conveyor-belt.png'); */
-  background: darkgrey;
+  background: lightgrey;
 }
 
 .pic-wrap {
